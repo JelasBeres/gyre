@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GYRE · read the current</title>
+<meta name="description" content="GYRE reads the current of money on Solana and Robinhood Chain: signals that explain themselves, a scam check built from on-chain evidence, forecasts graded in public, and swaps from your own wallet.">
+<link rel="canonical" href="https://gyre.trade/"><meta property="og:type" content="website"><meta property="og:site_name" content="GYRE"><meta property="og:title" content="GYRE · read the current"><meta property="og:description" content="Money moves in currents. GYRE reads the current on Solana and Robinhood Chain, and shows its evidence."><meta property="og:url" content="https://gyre.trade/"><meta property="og:image" content="https://gyre.trade/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://gyre.trade/og.png"><meta name="theme-color" content="#04121C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.png" type="image/png" sizes="180x180"><link rel="apple-touch-icon" href="/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"><link rel="stylesheet" href="/css/gyre.css">
+</head><body>
+<canvas id="c" aria-hidden="true"></canvas>
+<div id="top"></div>
+<div class="rail" aria-hidden="true"><i id="fill"></i><b style="top:0" data-m="0 m · surface"></b><b style="top:25%" data-m="200 m"></b><b style="top:50%" data-m="1000 m"></b><b style="top:75%" data-m="4000 m"></b><b style="top:100%" data-m="6000 m · release"></b></div>
+<div class="scroll-hint" id="hint" aria-hidden="true">dive<i></i></div>
+<main class="story">
+  <section class="chapter" data-side="left" id="ch1">
+    <div class="copy">
+      <span class="num"><b>0 m</b> Surface · Solana · Robinhood Chain</span>
+      <h1>Money moves<br>in <em>currents.</em></h1>
+      <p>Thousands of pairs on two chains, read every thirty seconds. GYRE follows where the money flows and shows you the evidence, not a hunch.</p>
+      <nav class="links"><a class="go" href="/discover">Open the terminal</a><a class="go soft" href="/record">See the track record</a></nav>
+    </div>
+  </section>
+  <section class="chapter" data-side="right" id="ch2">
+    <div class="copy">
+      <span class="num"><b>200 m</b> Thermocline · signals</span>
+      <h2>Every turn<br>leaves a <em>wake.</em></h2>
+      <p>A buy surge, a drained pool, a whale on the curve. GYRE compares each read with the last and only speaks when the move matters to the pool. On Robinhood Chain curve trades are exact, with the wallet and the hash.</p>
+      <div class="feed" id="feed" aria-live="polite"></div>
+    </div>
+  </section>
+  <section class="chapter" data-side="left" id="ch3">
+    <div class="copy">
+      <span class="num"><b>1000 m</b> Midwater · scam check</span>
+      <h2>Pressure shows<br>what <em>holds.</em></h2>
+      <p>Mint and freeze authority, owner and proxy slots, holders with pools set apart from wallets, the deployer's history. Each fact comes with its explorer link before the analyst weighs anything.</p>
+      <dl class="facts"><div><dt id="n-verd">—</dt><dd>verdicts on record</dd></div><div><dt id="n-pairs">—</dt><dd>pairs in the current</dd></div><div><dt id="n-sig">—</dt><dd>signals in the last hour</dd></div></dl>
+    </div>
+  </section>
+  <section class="chapter" data-side="right" id="ch4">
+    <div class="copy">
+      <span class="num"><b>4000 m</b> Deep · forecasts</span>
+      <h2>Logged on the way down.<br><em>Graded</em> on the way up.</h2>
+      <p>Every forecast is stored with the price at that moment and scored when its horizon ends. The hit rate sits on the record page for anyone to check, good days and bad.</p>
+      <dl class="facts"><div><dt id="n-fc">—</dt><dd>forecasts made</dd></div><div><dt id="n-res">—</dt><dd>resolved</dd></div><div><dt id="n-hit">—</dt><dd>direction hit rate</dd></div></dl>
+      <nav class="links"><a class="go" href="/record">Open the track record</a></nav>
+    </div>
+  </section>
+  <section class="chapter" data-side="center" id="ch5">
+    <div class="copy">
+      <span class="num"><b>6000 m</b> Release · trade</span>
+      <h2>Then the current<br><em>lets go.</em></h2>
+      <p>Swaps route through Jupiter on Solana and the Pons curve on Robinhood Chain. GYRE builds the transaction, your wallet signs it, and nothing passes through us.</p>
+      <nav class="links"><a class="go" href="/discover">Start on Discover</a><a class="go soft" href="/docs">Read the docs</a><a class="go soft" href="#ch1" id="again">Back to the surface</a></nav>
+    </div>
+  </section>
+</main>
+<section class="nets" id="networks"><div class="nwrap"><span class="num">Where GYRE reads</span><h2>Two chains, one current.</h2><div class="lwall"><a class="lg" href="https://solana.com" target="_blank" rel="noopener" aria-label="Solana" title="Solana"><svg viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M22 18h74L80 34H6zM6 42h74l16 16H22zM22 66h74L80 82H6z"/></svg></a><a class="lg" href="https://robinhood.com" target="_blank" rel="noopener" aria-label="Robinhood Chain" title="Robinhood Chain"><svg viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M78 10c-24 2-44 14-54 36-6 13-7 27-4 42 2-14 8-27 18-38-4 14-4 28 1 42 5-12 14-22 26-30-10 2-19 7-27 14 9-20 24-34 44-42-13 0-25 4-36 11 8-15 19-26 32-35z"/></svg></a><a class="lg" href="https://base.org" target="_blank" rel="noopener" aria-label="Base" title="Base"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="42" fill="currentColor"/><rect x="0" y="45" width="44" height="10" fill="#000"/></svg></a><a class="lg" href="https://dexscreener.com" target="_blank" rel="noopener" aria-label="DexScreener" title="DexScreener"><svg viewBox="0 0 220 60" aria-hidden="true"><text x="110" y="42" text-anchor="middle" font-family="var(--font)" font-size="26" font-weight="700" letter-spacing=".04em" fill="currentColor">DEXSCREENER</text></svg></a><a class="lg" href="https://jup.ag" target="_blank" rel="noopener" aria-label="Jupiter" title="Jupiter"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="26" fill="currentColor"/><path d="M8 62c20-22 64-34 84-26" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><path d="M12 76c22-10 52-16 78-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" opacity=".6"/></svg></a><a class="lg" href="https://ponsfamily.com" target="_blank" rel="noopener" aria-label="Pons" title="Pons"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="8" y="8" width="84" height="84" rx="22" fill="none" stroke="currentColor" stroke-width="7"/><path d="M36 74V26h18a16 16 0 0 1 0 32H36" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/></svg></a><a class="lg" href="https://www.x402.org" target="_blank" rel="noopener" aria-label="x402" title="x402"><svg viewBox="0 0 220 60" aria-hidden="true"><text x="110" y="42" text-anchor="middle" font-family="var(--mono)" font-size="40" font-weight="500" letter-spacing="0" fill="currentColor">x402</text></svg></a><a class="lg" href="https://solscan.io" target="_blank" rel="noopener" aria-label="Solscan" title="Solscan"><svg viewBox="0 0 220 60" aria-hidden="true"><text x="110" y="42" text-anchor="middle" font-family="var(--font)" font-size="36" font-weight="600" letter-spacing="-.02em" fill="currentColor">solscan</text></svg></a><a class="lg" href="https://robinhoodchain.blockscout.com" target="_blank" rel="noopener" aria-label="Blockscout" title="Blockscout"><svg viewBox="0 0 220 60" aria-hidden="true"><text x="110" y="42" text-anchor="middle" font-family="var(--font)" font-size="34" font-weight="600" letter-spacing="-.02em" fill="currentColor">blockscout</text></svg></a></div></section>
+<div id="foot"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="/js/site.js"></script><script src="/js/scene.js"></script><script src="/js/home.js"></script>
+</body></html>

@@ -1,0 +1,6 @@
+(()=>{const{$,esc,usd,price,pct,pctClass,tokCell,press,ago,post}=N;const f=$("#askf");document.addEventListener("click",e=>{const a=e.target.closest("[data-ex]");if(a){e.preventDefault();$("#q").value=a.dataset.ex;f.requestSubmit();}});
+f.addEventListener("submit",async e=>{e.preventDefault();const q=$("#q").value.trim();if(!q)return;const rd=$("#reading");rd.hidden=false;rd.className="quote";rd.innerHTML='Reading… <span class="cur"></span>';$("#res").hidden=true;
+try{const r=await post("/api/ask",{q});rd.innerHTML=`<b>${esc(r.filters.reading)}</b> · ${r.total} match${r.total===1?"":"es"}${r.note?" · "+esc(r.note):""}`;
+$("#rows").innerHTML=r.pairs.length?r.pairs.map(p=>`<tr class="row" data-href="/t/${esc(p.chain)}/${esc(p.pair)}"><td>${tokCell(p)}</td><td class="r mono">${price(p.priceUsd)}</td><td class="r ${pctClass(p.change.h1)}">${pct(p.change.h1)}</td><td class="r">${usd(p.vol.h1)}</td><td class="r">${usd(p.liq)}</td><td>${press(p.buyShare)}</td><td class="r mono">${ago(p.createdAt)}</td></tr>`).join(""):'<tr><td colspan="7"><div class="empty">Nothing in the live universe matches that right now.</div></td></tr>';$("#res").hidden=false;}
+catch(err){rd.className="quote bad";rd.textContent=err.message;}});
+$("#rows").addEventListener("click",e=>{const r=e.target.closest("tr[data-href]");if(r)location.href=r.dataset.href;});})();

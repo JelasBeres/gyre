@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>GYRE · Terminal</title><meta name="description" content="One pair on GYRE: live chart, flow, signals, the evidence-based scam check, a graded forecast and a swap from your own wallet."><meta name="theme-color" content="#04121C"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.png" type="image/png" sizes="180x180"><link rel="apple-touch-icon" href="/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"><link rel="stylesheet" href="/css/gyre.css"><meta property="og:site_name" content="GYRE"><meta property="og:title" content="GYRE · Terminal"><meta property="og:description" content="One pair on GYRE: live chart, flow, signals, the evidence-based scam check, a graded forecast and a swap from your own wallet."><meta property="og:image" content="https://gyre.trade/og.png"><meta name="twitter:card" content="summary_large_image"></head><body><div id="top"></div>
+<main class="page"><div class="wrap">
+  <div class="thead" id="thead"><div class="tok"><div class="ph">…</div><div><b>Locating the pair</b><span class="mono">—</span></div></div></div>
+  <div class="stats" id="stats"></div>
+  <div class="tgrid">
+    <div>
+      <div class="chart" id="chart"></div>
+      <div class="card" style="margin-top:18px"><h3><span><span class="k">Reading</span><br>What the current says <span class="k" style="color:var(--mute)">· two sentences</span></span><button class="btn ghost sm" id="brief-go">Read it</button></h3><div class="brief" id="brief">Buys against sells, volume against liquidity, the pair's age, and the one thing worth checking first.</div></div>
+      <div class="tcols">
+        <div class="card"><h3><span><span class="k">Pressure test</span><br>Scam check</span><button class="btn sm" id="scan-go">Run the check</button></h3><div class="scan" id="scan"><div class="gate" id="scan-gate">Each on-chain fact appears here with its explorer link, then the analyst gives a score. Needs a connected wallet: one signature, no transaction, no gas.</div></div><div id="verdict"></div></div>
+        <div class="card"><h3><span><span class="k">Logged and graded</span><br>Forecast</span><span><select class="f" id="fc-h" style="width:auto;height:34px;display:inline-block;margin-right:6px"><option value="1h">1 hour</option><option value="4h" selected>4 hours</option><option value="24h">24 hours</option></select><button class="btn sm" id="fc-go">Forecast</button></span></h3><div class="fc" id="fc"><div class="gate">Each forecast is stored with the price now and graded when its horizon ends. Every result, hit or miss, stays on the <a class="violet" href="/record">track record</a>.</div></div></div>
+      </div>
+    </div>
+    <aside style="display:grid;gap:18px;align-content:start">
+      <div class="card"><h3>Swap <span class="k" id="swap-net"></span></h3><div class="swapbox" id="swap"></div></div>
+      <div class="card"><h3>Sonar log · this pair <span class="k" id="sig-count"></span></h3><div class="alerts" id="psig" style="max-height:440px"></div></div>
+      <div class="card"><h3>Links</h3><div id="links" style="display:flex;gap:8px;flex-wrap:wrap"></div></div>
+    </aside>
+  </div>
+</div></main><div id="foot"></div><script src="/js/site.js"></script><script src="/js/terminal.js"></script></body></html>
